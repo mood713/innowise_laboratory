@@ -15,7 +15,7 @@ current_year = 2025
 
 try:
     birth_year = int(birth_year_str)
-    if not (1900 < birth_year < current_year):
+    if not (1900 <= birth_year <= current_year):
         print("Year must be between 1901 and 2024. Using 2000 as default.")
         birth_year = 2000
 except ValueError:
