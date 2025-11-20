@@ -25,9 +25,8 @@ except ValueError:
 current_age = current_year - birth_year
 
 hobbies = []
-print("Enter a favorite hobby or type 'stop' to finish:")
 while True:
-    hobby = input().strip()
+    hobby = input("Enter a favorite hobby or type 'stop' to finish: ").strip()
     if hobby.lower() == "stop":
         break
     if hobby:
